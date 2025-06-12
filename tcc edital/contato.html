@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - EntreLinhas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+      <button id="btn-ler-tudo" aria-label="Ler todo o conteúdo da página">Ler Tudo</button>
+  <header>
+    <div class="logo">EntreLinhas</div>
+    <button class="dark-toggle" onclick="document.body.classList.toggle('modo-escuro')">Modo Escuro</button>
+    <nav>
+      <ul>
+        <li><a href="index.html#sobre-nos">Sobre Nós</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#sobre-app">Sobre o App</a></li>
+        <li><a href="index.html#identificar">Identificar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-container">
+    <h2>Envie seu Comentário</h2>
+    <form id="form-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <textarea name="comentario" placeholder="Escreva seu comentário" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="success-message" id="mensagem-sucesso">
+      Mensagem enviada com sucesso! Você será redirecionado em instantes...
+      <br><br>
+      <button onclick="window.location.href='index.html'">Voltar agora</button>
+    </div>
+  </section>
+
+
+  <script>
+   
+    const form = document.getElementById("form-contato");
+    const mensagem = document.getElementById("mensagem-sucesso");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const dados = new FormData(form);
+
+      fetch("enviar.php", {
+        method: "POST",
+        body: dados
+      })
+      .then(res => res.text())
+      .then(() => {
+        form.style.display = "none";
+        mensagem.style.display = "block";
+        setTimeout(() => window.location.href = "index.html", 7000);
+      })
+      .catch(err => {
+        alert("Erro ao enviar. Tente novamente.");
+        console.error(err);
+      });
+    });
+
+  
+    function readText(text) {
+      const speech = new SpeechSynthesisUtterance(text);
+      speech.lang = "pt-BR";
+      window.speechSynthesis.speak(speech);
+    }
+
+   
+    document.querySelectorAll("h1, h2, h3, p, button").forEach(element => {
+      element.addEventListener("click", () => readText(element.textContent));
+    });
+  </script>
+
+</body>
+</html>
