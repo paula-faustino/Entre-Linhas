@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('fonts/OpenDyslexic3-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('fonts/OpenDyslexic3-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 * {
     margin: 0;
@@ -10,7 +24,7 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+   font-family: 'OpenDyslexic', Arial, sans-serif;
     background-color: #eee4ca;
     color: #333;
     line-height: 1.6;
@@ -22,6 +36,8 @@ body {
 body.modo-escuro {
     background-color: #1a1a1a;
     color: #f5f5f5;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 body.modo-escuro header,
@@ -59,14 +75,47 @@ body.modo-escuro textarea {
 header {
     background: #000;
     color: white;
-    padding: 20px 0;
+   padding: 8px 0;  
+    background-image: url ();
+    
+}
+div{
+    align-items: center;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.Logo {
+   padding: 20;
+  margin: 60px;
+  height: 90px;
+  border-radius: 60px;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+   justify-content: flex-end;
+  padding-right: 80px;
 }
+
+/*isso aqui e a coruja*/
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* espaço entre a coruja e o texto */
+  margin-bottom: 10px;
+}
+
+.brand img {
+  height: 90px; /* ajuste o tamanho da coruja */
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
 
 nav ul {
     list-style: none;
@@ -81,6 +130,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 nav ul li a:hover {
@@ -104,7 +155,7 @@ nav ul li a:hover {
 
 .hero-content h1 {
     font-size: 48px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
     color: #2b2b2b;
 }
 
@@ -112,12 +163,16 @@ nav ul li a:hover {
     font-size: 20px;
     margin-top: 10px;
     color: #555;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 .hero-content p {
     margin: 20px 0;
     font-size: 18px;
     color: #333;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 .btn-install, .btn-play {
@@ -129,6 +184,8 @@ nav ul li a:hover {
     border-radius: 10px;
     font-weight: bold;
     transition: background 0.3s;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 .btn-install:hover,
@@ -153,6 +210,8 @@ section {
     background: #fff9e5;
     border-radius: 24px;
     box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 body.modo-escuro section {
@@ -164,6 +223,8 @@ section h2 {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
+    
+   font-family: 'OpenDyslexic', Arial, sans-serif;
 }
 
 body.modo-escuro section h2 {
@@ -174,6 +235,7 @@ section p {
     font-size: 18px;
     color: #333;
     margin-bottom: 15px;
+    
 }
 
 section ul {
