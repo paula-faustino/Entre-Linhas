@@ -79,8 +79,36 @@ header {
     background-image: url ();
     
 }
-div{
-    align-items: center;
+/* Container para os cards */
+#identificar-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* Alinha os cards no centro */
+  align-items: stretch; /* Faz com que todos os cards tenham a mesma altura */
+  flex-wrap: nowrap; /* Impede que os cards quebrem para a linha de baixo */
+  overflow-x: auto; /* Permite rolar horizontalmente se necessário */
+}
+
+/* Estilo dos cards */
+.identificar-card {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px; /* Largura fixa para os cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 300px; /* Altura mínima para garantir que todos os cards tenham o mesmo tamanho */
+  flex-shrink: 0; /* Impede que o card encolha */
+}
+
+/* Estilo para as imagens */
+.identificar-card img {
+  width: 100%; /* Faz com que a imagem ocupe toda a largura do card */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .Logo {
