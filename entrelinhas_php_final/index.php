@@ -87,13 +87,14 @@
 
     <nav>
       <ul>
-       
         <li><a href="#inicio" data-page="inicio.php">Início</a></li>
+          <li><a href="#dislexia" data-page="dislexia.php">Dislexia</a></li>
         <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
         <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
         <li><a href="#identificar" data-page="identificar.php">Identificar</a></li>
         <li><a href="#contato" data-page="contato.php">Contato</a></li>
-        <li><a href="#dislexia" data-page="dislexia.php">Dislexia</a></li>
+        <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
+      
       </ul>
     </nav>
   </header>

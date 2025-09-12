@@ -2,8 +2,9 @@
   <h2>Como Identificar a Dislexia</h2>
   <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
     <div class="identificar-card">
-      <h3>1. Sinais na Leitura</h3>
+       <h3>1. Sinais na Leitura</h3>
       <p>Dificuldade para decodificar palavras, ler em voz alta ou compreender textos simples.</p>
+
     </div>
     <div class="identificar-card">
       <h3>2. Escrita com Trocas</h3>

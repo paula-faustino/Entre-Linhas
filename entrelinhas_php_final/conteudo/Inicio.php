@@ -1,5 +1,5 @@
  <main id="conteudo">
-    <section class="hero">
+    <section>
       <div class="hero-content">
         <h1>EntreLinhas</h1>
         <p class="subtext">Organizando ideias para quem vê o mundo de forma única</p>
