@@ -36,8 +36,10 @@
  
 <section>
   <h2>Redes Sociais</h2>
-  <p>Instagram-https://www.instagram.com/entrelinhassite?igsh=eHNzMWFlb2RzY2J3</p> 
-  <p></p>
+  <a href="https://www.instagram.com/entrelinhassite?igsh=eHNzMWFlb2RzY2J3">Instagram</a>
+</section>
+
+<script src="script.js"></script>
 
 <button class="dark-toggle">Modo Escuro</button>
   <script>
@@ -45,3 +47,4 @@
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('modo-escuro');
     });
+ 

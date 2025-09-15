@@ -39,3 +39,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// Função para alternar o modo
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+
+  // Salva no localStorage
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Quando a página carregar, aplica o tema salvo
+window.onload = function () {
+  const theme = localStorage.getItem("theme");
+  if (theme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+};
+

@@ -10,9 +10,14 @@
 </div>
 </div>
 </section>
+<head>
+  <link rel="stylesheet" href="../style.css"> <!-- se estiver dentro de /conteudo -->
+<script src="../script.js" defer></script>
+</head>
 <button class="dark-toggle">Modo Escuro</button>
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('modo-escuro');
     });
+    

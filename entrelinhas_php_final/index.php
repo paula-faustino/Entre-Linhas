@@ -106,11 +106,33 @@
         <p>Site voltado para auxiliar nas informações sobre a dislexia.</p>
       </div>
     </section>
+<script>
+  const toggle = document.querySelector('.dark-toggle');
+
+  // quando clicar no botão
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('modo-escuro');
+
+    // salva no navegador
+    if (document.body.classList.contains('modo-escuro')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
+  // quando recarregar ou mudar de aba do conteudo
+  window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('modo-escuro');
+    }
+  });
+</script>
 
    
 
   <script src="script.js"></script>
-
+  
   <button class="dark-toggle">Modo Escuro</button>
   <script>
     const toggle = document.querySelector('.dark-toggle');

@@ -422,13 +422,15 @@ button:hover, .btn-install:hover, .btn-play:hover {
 #btn-ler-tudo {
   right: 4.5rem; 
 }
+
 body.modo-escuro section p,
 body.modo-escuro section ul,
 body.modo-escuro section ul li,
 body.modo-escuro .identificar-card p,
 body.modo-escuro .identificar-card h3 {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
+
 body.modo-escuro .identificar-card {
   background-color: #333;
   color: #f5f5f5;
@@ -438,11 +440,26 @@ body.modo-escuro .identificar-card h3,
 body.modo-escuro .identificar-card p {
   color: #f5f5f5;
 }
+
 body.modo-escuro .hero-content h1,
 body.modo-escuro .hero-content .subtext,
 body.modo-escuro .hero-content p {
   color: #f5f5f5;
 }
+.modo-escuro {
+  background-color: #1a1a1a;
+  color: white;
+}
+.modo-escuro section,
+.modo-escuro .hero-content {
+  background-color: #333 !important;
+  color: white !important;
+}
+.modo-escuro a,
+.modo-escuro button {
+  color: white !important;
+}
+
 
 
 
