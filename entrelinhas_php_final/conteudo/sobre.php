@@ -8,22 +8,22 @@
 <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding-top: 50px;">
     <div class="identificar-card">
       <h3>Mayara de O. Santana</h3>
-       <img src="may.jpeg" alt="grupo" class="logo-img">
+       <img src="imagems/may.jpeg" alt="grupo" class="logo-img">
       <p>Desenvolvedora. Atuou de forma ampla no projeto, sendo responsável pela conexão com o banco de dados do site, pela estruturação e design da documentação, além da implementação do site. Desenvolveu as seções "Sobre Nós" e "Início", organizando o conteúdo e garantindo a usabilidade. Também contribuiu na organização geral do projeto e na padronização das informações.</p> 
     </div>
     <div class="identificar-card">
       <h3>Suzan Marry F. Monteiro</h3>
-      <img src="suzan.jpeg" alt="grupo" class="logo-img">
+      <img src="imagems/suzan.jpeg" alt="grupo" class="logo-img">
       <p>Responsável pelo design do site, incluindo a implementação do modo escuro e da funcionalidade "ler tudo", voltada para acessibilidade de pessoas com dislexia. Contribuiu com a pesquisa de leis e direitos relacionados ao tema do projeto e desenvolveu, em conjunto com a Emilly, o formulário para a pesquisa de campo. Além disso, atuou no gerenciamento das redes sociais, sendo responsável pelo Twitter do site em parceria com a Emilly.</p>
     </div>
     <div class="identificar-card">
       <h3>Emilly Magela </h3>
-      <img src="emilly.jpeg" alt="grupo" class="logo-img">
+      <img src="imagems/emilly.jpeg" alt="grupo" class="logo-img">
       <p>Contribuiu para a elaboração do formulário da pesquisa de campo, participando também da definição das abas do site. Foi responsável por registrar na documentação do projeto os resultados obtidos com a pesquisa. Implementou a fonte OpenDyslexic no site, trazendo mais acessibilidade, e atuou na gestão das redes sociais, cuidando do Instagram do projeto. Além disso, pesquisou sobre aplicativos que auxiliam pessoas com dislexia e realizou estudos sobre a história e inspirações relacionadas ao tema.</p>
     </div>
     <div class="identificar-card">
       <h3>Paula G. Faustino </h3>
-      <img src="papa.jpeg" alt="grupo" class="logo-img">
+      <img src="imagems/papa.jpeg" alt="grupo" class="logo-img">
       <p>Foi responsável por trazer materiais gratuitos e conceitos sobre dislexia para compor o conteúdo do site. Descobriu uma fonte acessível para auxiliar pessoas com dislexia e colaborou ativamente na documentação do projeto, contribuindo com as imagens, a conclusão, o objetivo e o resumo do produto, além de criar a imagem de capa.</p>
     </div>
 </div>
@@ -34,10 +34,12 @@
   <p>O Entre Linhas tem como objetivo informar e conscientizar sobre a dislexia, apresentando suas características, causas e impactos no aprendizado. Buscamos oferecer exemplos práticos, materiais gratuitos e acessíveis, além de histórias inspiradoras, que promovem empatia e compreensão. Também mapeamos recursos e informações úteis, incluindo profissionais especializados, leis e direitos, para apoiar famílias, educadores, alunos e toda a comunidade no processo de inclusão e no entendimento da dislexia.</p>
 </section>
  
-<section>
+<section class="social-links">
   <h2>Redes Sociais</h2>
-  <a href="https://www.instagram.com/entrelinhassite?igsh=eHNzMWFlb2RzY2J3">Instagram</a>
+  <a href="https://www.instagram.com/entrelinhassite?igsh=eHNzMWFlb2RzY2J3"target="_blank"> <img src="imagems/Instagram.webp" alt="grupo" class="redes_logo"> Instagram </a>
+  <a href="https://x.com/EntreLinhasSEPM?t=UDAtIas57ACqTR-e34mArQ&s=08"target="_blank"><img src="imagems/X_logo.jpg" alt="grupo" class="redes_logo"> Twitter (X) </a>
 </section>
+
 
 <script src="script.js"></script>
 

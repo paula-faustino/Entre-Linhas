@@ -1,6 +1,17 @@
 <?php
 // contato.php
 ?>
+<section>
+  <div>
+    <h2>Entre Em Contato Conosco</h2>
+    <p>Este espaço foi criado para oferecer acolhimento, troca de experiências e esclarecimento de dúvidas a pessoas com dislexia, bem como a familiares, educadores e demais interessados no tema.</p>
+    <p>A dislexia é um transtorno real, que impacta diretamente o processo de aprendizagem, exigindo compreensão, respeito e estratégias adequadas de apoio.
+      Aqui, buscamos promover a conscientização, dar visibilidade às dificuldades enfrentadas diariamente e valorizar cada relato como parte essencial dessa construção coletiva.
+   </p>
+    <p>Nosso compromisso é fortalecer a inclusão, disseminar informações falsas e criar um ambiente seguro para diálogo e aprendizado.</p>
+  </div>
+</section>
+
 <section class="form-container">
   <h2>Envie seu Comentário</h2>
   <form id="form-contato">

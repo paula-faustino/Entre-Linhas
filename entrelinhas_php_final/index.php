@@ -81,7 +81,7 @@
   <button id="btn-ler-tudo" aria-label="Ler todo o conteúdo da página">Ler Tudo</button>
   <header>
 <div class="brand">
-  <img src="coruja.png" alt="Logo" class="logo-img">
+  <img src="imagems/coruja.png" alt="Logo" class="log-imag">
   <h1 class="titulo">EntreLinhas</h1>
 </div>
 
