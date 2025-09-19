@@ -1,6 +1,7 @@
 <?php
-// index.php - mantém o mesmo design do index.html e usa Ajax para carregar seções PHP
+
 ?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -79,33 +80,42 @@
 <body>
 
   <button id="btn-ler-tudo" aria-label="Ler todo o conteúdo da página">Ler Tudo</button>
-  <header>
-<div class="brand">
-  <img src="imagems/coruja.png" alt="Logo" class="log-imag">
-  <h1 class="titulo">EntreLinhas</h1>
-</div>
 
-    <nav>
-      <ul>
-        <li><a href="#inicio" data-page="inicio.php">Início</a></li>
+<header>
+  <div class="brand">
+    <img src="imagems/coruja.png" alt="Logo" class="log-imag">
+    <h1 class="titulo">EntreLinhas</h1>
+  </div>
+      <nav>
+        <ul>
+        <li><a href="index.php">Início</a></li>
           <li><a href="#dislexia" data-page="dislexia.php">Dislexia</a></li>
-        <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
-        <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
-        <li><a href="#identificar" data-page="identificar.php">Identificar</a></li>
-        <li><a href="#contato" data-page="contato.php">Contato</a></li>
-        <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
-      
-      </ul>
-    </nav>
+          <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
+          <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
+          <li><a href="#identificar" data-page="identificar.php">Identificar</a></li>
+          <li><a href="#contato" data-page="contato.php">Contato</a></li>
+          <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
+        </ul>
+      </nav>
   </header>
+
   <main id="conteudo">
-    <section class="hero">
-      <div class="hero-content">
-       
-        <p class="subtext">Organizando ideias para quem vê o mundo de forma única</p>
-        <p>Site voltado para auxiliar nas informações sobre a dislexia.</p>
-      </div>
-    </section>
+
+<!-- conteudo da pagina -->
+<section>
+        <div class="hero-content">
+          <h1>EntreLinhas</h1>
+          <p class="subtext">Organizando ideias para quem vê o mundo de forma única</p>
+          <p>Site voltado para auxiliar nas informações sobre a dislexia.</p>
+        </div>
+</section>
+        
+<section id="sobre-site">
+      <h2>Sobre o Site</h2>
+      <p>Nosso aplicativo foi criado para auxiliar pessoas com dislexia em seus processos de aprendizagem. Ele apresenta diferentes níveis de interação adaptados ao tipo de dislexia, permitindo um suporte personalizado e eficaz.</p>
+</section>
+
+<!--botão modo escuro-->
 <script>
   const toggle = document.querySelector('.dark-toggle');
 

@@ -88,18 +88,34 @@ header {
   padding: 20px;
   background-color: #f5f5f5; /* Cor de fundo do container */
 }
-
 .identificar-card {
-  background-color: #e3f2fd; /* Cor de fundo azul claro */
-  padding: 20px;
-  border-radius: 10px; /* Bordas arredondadas */
-  width: 30%; /* Largura dos cards, ajustada para que fiquem lado a lado */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para os cards */
+  background-color: #e3f2fd;
+  padding: 5px;           /* um pouco menor */
+  border-radius: 10px;
+  width: 80%;              /* ocupa 90% da tela em telas pequenas */
+  max-width: 200px;        /* tamanho máximo para não ficar gigante */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 5px;            /* espaço entre os cards */
 }
+/* Layout para desktop */
+.cards-container {
+  display: flex;
+  justify-content: space-around; /* espaço entre os cards */
+  flex-wrap: wrap;               /* permite quebrar linha em telas menores */
+}
+
+/* Layout para telas pequenas */
+@media (max-width: 768px) {
+  .identificar-card {
+    width: 90%;       /* ocupa quase toda a largura da tela */
+    margin: 10px auto; /* centraliza e dá espaço */
+  }
+}
+
 
 .identificar-card h3 {
   margin-bottom: 10px;
@@ -255,16 +271,21 @@ nav ul li a:hover {
 }
 
 section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 30px 40px;
+    width: 90%;           /* ocupa 90% da largura da tela */
+    max-width: 1100px;    /* mas não ultrapassa 1100px em telas grandes */
+    margin: 60px auto;    /* centraliza horizontalmente e dá espaço vertical */
+    padding: 30px 5%;     /* espaço interno proporcional à tela */
     text-align: justify;
     background: #fff9e5;
     border-radius: 24px;
     box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
-    
-   font-family: 'OpenDyslexic', Arial, sans-serif;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
 }
+
+body.modo-escuro section {
+    background: #2a2a2a;
+}
+
 
 body.modo-escuro section {
     background: #2a2a2a;
