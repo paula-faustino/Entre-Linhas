@@ -17,6 +17,37 @@
   </div>
 </section>
 <button class="dark-toggle">Modo Escuro</button>
+
+<main id="conteudo"></main> 
+ <section>
+      <div class="hero-content">
+<h2>Antes da escola: primeiros sinais de dislexia</h2>
+<p> 
+<ul> 
+<li>Fala tardia;</li>
+<li>Dificuldade em aprender novas palavras;</li>
+<li>Problemas para formar palavras corretamente, como inverter sons ou confundir palavras semelhantes;</li>
+<li>Dificuldade em lembrar ou nomear letras, números e cores;</li>
+<li>Problemas para aprender rimas infantis.</li>
+</ul>
+</p></div></section>
+
+<main id="conteudo"></main> 
+ <section>
+      <div class="hero-content">
+<h2>Idade escolar: sintomas de dislexia e impacto acadêmico</h2>
+<p> 
+<ul> 
+<li>Leitura abaixo do nível esperado para a idade;</li>
+<li>Problemas para compreender o que ouve;</li>
+<li>Dificuldade em lembrar a sequência de informações ou tarefas;</li>
+<li>Dificuldade para diferenciar letras e palavras semelhantes;</li>
+<li>Demora excessiva para completar tarefas de leitura e escrita;</li>
+<li>Evitar atividades que envolvam leitura ou escrita.</li>
+</ul>
+</p></div></section>
+
+
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {
