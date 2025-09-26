@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -143,7 +143,8 @@
 
   <script src="script.js"></script>
   
-  <button class="dark-toggle">Modo Escuro</button>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {

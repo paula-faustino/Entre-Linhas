@@ -9,21 +9,21 @@
     <div class="identificar-card">
       <h3>Mayara de O. Santana</h3>
        <img src="imagems/may.jpeg" alt="grupo" class="logo-img">
-      <p>Desenvolvedora. Atuou de forma ampla no projeto, sendo responsável pela conexão com o banco de dados do site, pela estruturação e design da documentação, além da implementação do site. Desenvolveu as seções "Sobre Nós" e "Início", organizando o conteúdo e garantindo a usabilidade. Também contribuiu na organização geral do projeto e na padronização das informações.</p> 
+      <p>Desenvolvedora. Atuou de forma ampla no projeto, sendo responsável pela estruturação e design da documentação, além da implementação do site. Desenvolveu as seções "Sobre Nós" e "Início", organizando o conteúdo e garantindo a usabilidade. Também contribuiu na organização geral do projeto e na padronização das informações. Além disso, colaborou na implementação em JavaScript do botão "Ler Tudo", voltado para acessibilidade, a partir da ideia criada por Suzan.</p> 
     </div>
     <div class="identificar-card">
       <h3>Suzan Marry F. Monteiro</h3>
       <img src="imagems/suzan.jpeg" alt="grupo" class="logo-img">
-      <p>Responsável pelo design do site, incluindo a implementação do modo escuro e da funcionalidade "ler tudo", voltada para acessibilidade de pessoas com dislexia. Contribuiu com a pesquisa de leis e direitos relacionados ao tema do projeto e desenvolveu, em conjunto com a Emilly, o formulário para a pesquisa de campo. Além disso, atuou no gerenciamento das redes sociais, sendo responsável pelo Twitter do site em parceria com a Emilly.</p>
+      <p>Responsável pelo design do site, incluindo a implementação do modo escuro e da funcionalidade "ler tudo" junto com Mayara. E responsável pela conexão com o banco de dados do site, voltada para acessibilidade de pessoas com dislexia. Contribuiu com a pesquisa de leis e direitos relacionados ao tema do projeto e desenvolveu, em conjunto com a Emilly, o formulário para a pesquisa de campo. Além disso, atuou no gerenciamento das redes sociais, sendo responsável pelo Twitter do site em parceria com a Emilly.</p>
     </div>
     <div class="identificar-card">
       <h3>Emilly Magela </h3>
-      <img src="imagems/emilly.jpeg" alt="grupo" class="logo-img">
+      <br><img src="imagems/emilly.jpeg" alt="grupo" class="logo-img">
       <p>Contribuiu para a elaboração do formulário da pesquisa de campo, participando também da definição das abas do site. Foi responsável por registrar na documentação do projeto os resultados obtidos com a pesquisa. Implementou a fonte OpenDyslexic no site, trazendo mais acessibilidade, e atuou na gestão das redes sociais, cuidando do Instagram do projeto. Além disso, pesquisou sobre aplicativos que auxiliam pessoas com dislexia e realizou estudos sobre a história e inspirações relacionadas ao tema.</p>
     </div>
     <div class="identificar-card">
       <h3>Paula G. Faustino </h3>
-      <img src="imagems/papa.jpeg" alt="grupo" class="logo-img">
+      <br><img src="imagems/papa.jpeg" alt="grupo" class="logo-img">
       <p>Foi responsável por trazer materiais gratuitos e conceitos sobre dislexia para compor o conteúdo do site. Descobriu uma fonte acessível para auxiliar pessoas com dislexia e colaborou ativamente na documentação do projeto, contribuindo com as imagens, a conclusão, o objetivo e o resumo do produto, além de criar a imagem de capa.</p>
     </div>
 </div>
@@ -43,7 +43,8 @@
 
 <script src="script.js"></script>
 
-<button class="dark-toggle">Modo Escuro</button>
+ <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {

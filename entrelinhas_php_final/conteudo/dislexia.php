@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="../style.css"> <!-- se estiver dentro de /conteudo -->
 <script src="../script.js" defer></script>
 </head>
-<button class="dark-toggle">Modo Escuro</button>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {

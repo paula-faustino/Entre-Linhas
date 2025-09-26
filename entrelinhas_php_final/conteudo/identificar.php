@@ -47,6 +47,7 @@
 </ul>
 </p></div></section>
 
+ <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
 
   <script>
     const toggle = document.querySelector('.dark-toggle');

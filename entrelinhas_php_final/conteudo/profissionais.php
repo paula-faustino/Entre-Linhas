@@ -10,7 +10,8 @@
 <br>Psicólogo/Neuropsicólogo: Avalia outras questões cognitivas e emocionais relacionadas à dislexia, oferecendo suporte e tratamento. </p>
 </div>
 </section>
-<button class="dark-toggle">Modo Escuro</button>
+ <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {

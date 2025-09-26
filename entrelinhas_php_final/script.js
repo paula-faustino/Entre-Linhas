@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const conteudo = document.getElementById("conteudo");
 
+  // ===============================
+  // Controle de leitura
+  // ===============================
+  let lendo = false;
+  let utterance;
+  let bloquearLeitura = false; // impede leitura ao clicar em textos
+
   // Navegação Ajax
   document.querySelectorAll("nav a[data-page]").forEach(link => {
     link.addEventListener("click", (e) => {
@@ -16,46 +23,74 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Delegação: leitura em voz alta para elementos de texto e botões (inclusive conteúdos dinâmicos)
+  // Delegação: leitura em voz alta (somente se não estiver bloqueado)
   document.addEventListener("click", (e) => {
+    if (bloquearLeitura) return; // não deixa ler se bloqueado
+
     const el = e.target.closest("h1, h2, h3, p, button");
     if (!el) return;
     const text = el.textContent?.trim();
     if (text) {
       const speech = new SpeechSynthesisUtterance(text);
       speech.lang = "pt-BR";
+      window.speechSynthesis.cancel();
       window.speechSynthesis.speak(speech);
     }
   });
 
-  // Botão Ler Tudo (fixo)
+  // ===============================
+  // Botão Ler Tudo
+  // ===============================
   const btnLerTudo = document.getElementById('btn-ler-tudo');
   if (btnLerTudo) {
     btnLerTudo.addEventListener('click', () => {
-      const texto = document.body.innerText;
-      const speech = new SpeechSynthesisUtterance(texto);
-      speech.lang = 'pt-BR';
-      window.speechSynthesis.speak(speech);
+      if (lendo) {
+        // 🔴 Parar leitura de vez
+        window.speechSynthesis.cancel();
+        lendo = false;
+        bloquearLeitura = true; // bloqueia cliques
+        btnLerTudo.textContent = "Ler Tudo";
+      } else {
+        // Decide qual parte ler: seção ativa, ou main, ou body
+        const alvo = document.querySelector("section.ativa") 
+                  || document.querySelector("main") 
+                  || document.body;
+
+        const texto = alvo.innerText.trim();
+        if (texto) {
+          utterance = new SpeechSynthesisUtterance(texto);
+          utterance.lang = 'pt-BR';
+          utterance.onend = () => {
+            lendo = false;
+            bloquearLeitura = true; // bloqueia cliques quando termina
+            btnLerTudo.textContent = "Ler Tudo";
+          };
+          window.speechSynthesis.cancel();
+          window.speechSynthesis.speak(utterance);
+          lendo = true;
+          bloquearLeitura = false; // enquanto lê, cliques ainda funcionam
+          btnLerTudo.textContent = "Parar Leitura";
+        }
+      }
     });
   }
 });
+
 // Função para alternar o modo
 function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("modo-escuro");
 
-  // Salva no localStorage
-  if (document.body.classList.contains("dark-mode")) {
+  if (document.body.classList.contains("modo-escuro")) {
     localStorage.setItem("theme", "dark");
   } else {
     localStorage.setItem("theme", "light");
   }
 }
 
-// Quando a página carregar, aplica o tema salvo
 window.onload = function () {
   const theme = localStorage.getItem("theme");
   if (theme === "dark") {
-    document.body.classList.add("dark-mode");
+    document.body.classList.add("modo-escuro");
   }
 };
 
