@@ -1,14 +1,13 @@
 <?php
-$servidor = "localhost"; // geralmente "localhost"
-$usuario = "root";       // seu usuário do MySQL
-$senha = "root";             // sua senha do MySQL
-$banco = "entrelinhas";  // o banco criado no contato.sql
+$host = "localhost";   // servidor
+$user = "root";        // usuário do MySQL (padrão no XAMPP)
+$pass = "root";            // senha (normalmente vazia no XAMPP, mas se você definiu coloque aqui)
+$db   = "entrelinhas"; // nome do banco que você criou
 
-$conn = new mysqli($servidor, $usuario, $senha, $banco);
+$conn = new mysqli($host, $user, $pass, $db);
 
-
+// Verifica se deu erro
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 ?>
-

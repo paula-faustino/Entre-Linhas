@@ -1,21 +1,27 @@
 <?php
 include("../conexao.php");
 
+// inicializa a flag de sucesso
 $sucesso = false;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'] ?? '';
     $comentario = $_POST['comentario'] ?? '';
 
     if (!empty($nome) && !empty($comentario)) {
-        $stmt = $conn->prepare("INSERT INTO contatos (nome, comentario) VALUES (?, ?)");
-        $stmt->bind_param("ss", $nome, $comentario);
+        $sql = "INSERT INTO contatos (nome, comentario) VALUES (?, ?)";
+        $stmt = $conn->prepare($sql);
 
-        if ($stmt->execute()) {
-            $sucesso = true;
+        if ($stmt) {
+            $stmt->bind_param("ss", $nome, $comentario);
+
+            if ($stmt->execute()) {
+                // define flag de sucesso
+                $sucesso = true;
+            }
+
+            $stmt->close();
         }
-
-        $stmt->close();
     }
 }
 
@@ -38,17 +44,15 @@ $conn->close();
 
   <?php if ($sucesso): ?>
     <div class="success-message" id="mensagem-sucesso">
-      Mensagem enviada com sucesso!
-      <br><br>
-      <button onclick="window.location.href='index.php'">Voltar agora</button>
+      <p>✅ Mensagem enviada com sucesso!</p>
     </div>
-  <?php else: ?>
-    <form id="form-contato" method="POST" action="">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <textarea name="comentario" placeholder="Escreva seu comentário" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
   <?php endif; ?>
+
+ <form method="POST" action="conteudo/contato.php">
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <textarea name="comentario" placeholder="Escreva seu comentário" rows="5" required></textarea>
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
 </section>
 
 <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
@@ -60,6 +64,24 @@ $conn->close();
 </script>
 
 <style>
-  .success-message { display: block; color: green; margin-top: 20px; }
-  .modo-escuro { background-color: #222; color: #eee; }
+  .form-container {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  .success-message {
+    background: #e6ffed;
+    border: 1px solid #a5d6a7;
+    color: #2e7d32;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .modo-escuro {
+    background-color: #222;
+    color: #eee;
+  }
 </style>
