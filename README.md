@@ -47,3 +47,7 @@ Data e hora
 Preferências aplicadas durante a leitura
 
 ---
+
+Contribuidores:
+
+Emilly Magela, Mayara Santana, Paula Faustino e Suzan Marry.
