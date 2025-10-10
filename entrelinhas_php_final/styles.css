@@ -71,13 +71,53 @@ body.modo-escuro textarea {
     cursor: pointer;
 }
 
-
+/* ===== HEADER MAIS COMPACTO ===== */
 header {
-    background: #000;
-    color: white;
-   padding: 8px 0;  
-    background-image: url ();
-    
+  background: #000;
+  color: white;
+  padding: 6px 30px; /* 🔹 diminui a altura geral do header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* 🔹 reduz espaço entre logo e menu */
+}
+
+/* ===== LOGO + TEXTO ===== */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* 🔹 espaço menor entre a coruja e o texto */
+}
+
+.brand img {
+  height: 45px;  /* 🔹 diminui tamanho da coruja */
+  width: auto;
+}
+
+.titulo {
+  font-size: 22px; /* 🔹 diminui tamanho do texto "EntreLinhas" */
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* 🔹 reduz o espaço entre os itens do menu */
+}
+
+.menu a {
+  font-size: 15px; /* 🔹 diminui o texto do menu */
+  padding: 6px 10px; /* 🔹 reduz o espaço interno dos links */
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  color: #87c6d6;
 }
 
 
@@ -422,11 +462,6 @@ button:hover {
 }
 
 
-
-button, .btn-install, .btn-play {
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-  cursor: pointer;
-}
 
 button:hover, .btn-install:hover, .btn-play:hover {
   background-color: #aad8ff; 
