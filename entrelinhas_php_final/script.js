@@ -9,19 +9,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let bloquearLeitura = false; // impede leitura ao clicar em textos
 
   // Navegação Ajax
-  document.querySelectorAll("nav a[data-page]").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const pagina = "conteudo/" + link.getAttribute("data-page");
-      fetch(pagina)
-        .then(res => res.text())
-        .then(html => {
-          conteudo.innerHTML = html;
-          window.scrollTo({ top: 0, behavior: "smooth" });
-        })
-        .catch(err => console.error("Erro ao carregar:", err));
-    });
+  document.querySelectorAll("a[data-page]").forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const pagina = "conteudo/" + link.getAttribute("data-page");
+    fetch(pagina)
+      .then(res => res.text())
+      .then(html => {
+        conteudo.innerHTML = html;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document.title = "EntreLinhas";
+      });
   });
+});
+
 
   // Delegação: leitura em voz alta (somente se não estiver bloqueado)
   document.addEventListener("click", (e) => {

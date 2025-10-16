@@ -1,1 +1,17 @@
 teste
+<h1 class="fw-bold text-white">Entenda a Dislexia</h1>
+        <p class="fs-5">Veja os principais tipos e métodos de apoio ao aprendizado</p>
+
+        document.querySelectorAll("nav a[data-page]").forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const pagina = "conteudo/" + link.getAttribute("data-page");
+      fetch(pagina)
+        .then(res => res.text())
+        .then(html => {
+          conteudo.innerHTML = html;
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        })
+        .catch(err => console.error("Erro ao carregar:", err));
+    });
+  });

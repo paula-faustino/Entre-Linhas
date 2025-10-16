@@ -194,17 +194,23 @@
       <li class="dropdown">
         <a href="#dislexia" data-page="dislexia.php">Dislexia ▾</a>
         <ul class="dropdown-content">
+          <a href="#dislexia" data-page="dislexia.php">Dislexia</a>
           <li><a href="oque-e-dislexia.php">O que é Dislexia</a></li>
           <li><a href="tipos-dislexia.php">Tipos de Dislexia</a></li>
            <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
-           <li><a href="#Pessoas" date-page="Conteudo/PessoasC.php">Pessoas com Dislexia</a></li>
+           <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
         </ul>
       </li>
 
-      <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
-      <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
-      <li><a href="#contato" data-page="contato.php">Contato</a></li>
-      <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
+      <li class="dropdown">
+       <a href="#servicos">Serviços ▾</a>
+       <ul class="dropdown-content">
+        <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
+        <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
+        <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
+        <li><a href="#contato" data-page="contato.php">Contato</a></li>
+       </ul>
+     </li>
     </ul>
   </nav>
 </header>
@@ -221,7 +227,7 @@
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
         <h1 class="fw-bold text-white">Entenda a Dislexia</h1>
         <p class="fs-5">Veja os principais tipos e métodos de apoio ao aprendizado</p>
-        <a href="conteudo/PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
       </div>
     </div>
 
@@ -229,7 +235,7 @@
 
   <!-- Botões de navegação -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
