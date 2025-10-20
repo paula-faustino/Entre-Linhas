@@ -14,6 +14,17 @@
 
   <link rel="stylesheet" href="styles.css" />
   <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #eee4ca;
+}
+
+.carousel-item,
+.carousel-inner {
+  background-color: #eee4ca !important;
+}
 
     html {
       scroll-behavior: smooth;
@@ -130,6 +141,13 @@
 
 
 /* ===== AJUSTE DO TAMANHO DO CARROSSEL ===== */
+
+.carousel-item img {
+  object-fit: cover;  /* evita sobras */
+  width: 100%;
+  height: auto;
+}
+
 #carouselExample {
   max-width: 700px;  /* 🔹 largura máxima menor */
   margin: 30px auto; /* 🔹 centraliza o carrossel */
@@ -178,7 +196,7 @@
 </head>
 <body>
 
-  <button id="btn-ler-tudo" aria-label="Ler todo o conteúdo da página">Ler Tudo</button>
+ <button id="btn-ler-tudo" aria-label="Ler todo o conteúdo da página">Ler Tudo</button>
 
 <header>
   <div class="brand">
@@ -189,7 +207,7 @@
   <nav>
     <ul class="menu">
       <li><a href="index.php">Início</a></li>
-
+     
       <!-- MENU DROPDOWN DE DISLEXIA -->
       <li class="dropdown">
         <a href="#dislexia" data-page="dislexia.php">Dislexia ▾</a>
@@ -197,8 +215,9 @@
           <a href="#dislexia" data-page="dislexia.php">Dislexia</a>
           <li><a href="oque-e-dislexia.php">O que é Dislexia</a></li>
           <li><a href="tipos-dislexia.php">Tipos de Dislexia</a></li>
-           <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
-           <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
+          <li><a href= "#tipo-dislexia" data-page="tipos-dislexia.php">Tipos de dislexia</a></li> 
+          <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
+          <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
         </ul>
       </li>
 
@@ -208,8 +227,8 @@
         <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
         <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
         <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
-        <li><a href="#contato" data-page="contato.php">Contato</a></li>
        </ul>
+      <li><a href="#contato" data-page="contato.php">Contato</a></li>
      </li>
     </ul>
   </nav>
@@ -222,25 +241,23 @@
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-  <div class="carousel-item active"> <!-- ✅ adicionado 'active' -->
-    <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
+    <div class="carousel-item active">
+      <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <h1 class="fw-bold text-white">Entenda a Dislexia</h1>
-        <p class="fs-5">Veja os principais tipos e métodos de apoio ao aprendizado</p>
         <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
       </div>
     </div>
-
   </div>
 
   <!-- Botões de navegação -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
+    <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
+
 
 
 <section>
@@ -255,12 +272,6 @@
       <h2>Sobre o Site</h2>
       <p>Nosso aplicativo foi criado para auxiliar pessoas com dislexia em seus processos de aprendizagem. Ele apresenta diferentes níveis de interação adaptados ao tipo de dislexia, permitindo um suporte personalizado e eficaz.</p>
 </section>
-
-</div>
-<button class="carousel-control-prev" ...></button>
-<button class="carousel-control-next" ...></button>
-</div>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -292,7 +303,7 @@
 
   <script src="script.js"></script>
   
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+  <button class="dark-toggle" onclick="toggleDarkMode()">Modo Escuro</button>
 
   <script>
     const toggle = document.querySelector('.dark-toggle');

@@ -22,6 +22,12 @@
 html {
     scroll-behavior: smooth;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 body {
    font-family: 'OpenDyslexic', Arial, sans-serif;
@@ -470,29 +476,48 @@ button:hover, .btn-install:hover, .btn-play:hover {
 }
 
 
+/* ===== AJUSTES BOTÕES TOPO ===== */
 #btn-ler-tudo {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background-color: #ace7ff;
+  top: 10px;
+  right: 120px; /* 🔹 move um pouco pra esquerda pra não colar no outro botão */
+  background-color: #bde7ff;
   border: none;
-  border-radius: 12px;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
+  border-radius: 8px;
+  padding: 6px 12px; /* 🔹 menor */
+  font-size: 0.85rem; /* 🔹 texto menor */
   font-weight: 600;
-  color: #004a99;
-  box-shadow: 0 2px 6px rgba(0, 74, 153, 0.4);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  z-index: 9999;
+  color: #003d7a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  transition: all 0.3s ease;
 }
 
 #btn-ler-tudo:hover {
-  background-color: #004a99;
-  color: #ace7ff;
+  background-color: #007bff;
+  color: #fff;
 }
-#btn-ler-tudo {
-  right: 4.5rem; 
+.dark-toggle {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #ddd;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px; /* 🔹 ainda menor */
+  font-size: 0.7rem; /* 🔹 texto menor */
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
+
+.dark-toggle:hover {
+  background-color: #444;
+  color: #fff;
+}
+
 
 body.modo-escuro section p,
 body.modo-escuro section ul,
