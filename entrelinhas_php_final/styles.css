@@ -84,8 +84,8 @@ header {
   padding: 6px 30px; /* 🔹 diminui a altura geral do header */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px; /* 🔹 reduz espaço entre logo e menu */
+  justify-content:start;
+  gap: 20%; /* 🔹 reduz espaço entre logo e menu */
 }
 
 /* ===== LOGO + TEXTO ===== */
@@ -479,16 +479,18 @@ button:hover, .btn-install:hover, .btn-play:hover {
 /* ===== AJUSTES BOTÕES TOPO ===== */
 #btn-ler-tudo {
   position: fixed;
-  top: 10px;
-  right: 120px; /* 🔹 move um pouco pra esquerda pra não colar no outro botão */
+  top: 75px; /* 🔹 VALOR CHAVE: Ajustado para ficar abaixo do primeiro botão. */
+  right: 1%; /* 🔹 IGUAL ao .dark-toggle para alinhamento vertical */
+  
+  /* Mantendo estilos de tamanho e cor */
   background-color: #bde7ff;
   border: none;
   border-radius: 8px;
-  padding: 6px 12px; /* 🔹 menor */
-  font-size: 0.85rem; /* 🔹 texto menor */
+  padding: 8px 12px; 
+  font-size: 0.85rem;
   font-weight: 600;
   color: #003d7a;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2);
   z-index: 10000;
   transition: all 0.3s ease;
 }
@@ -497,19 +499,23 @@ button:hover, .btn-install:hover, .btn-play:hover {
   background-color: #007bff;
   color: #fff;
 }
+
 .dark-toggle {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  background-color: #ddd;
+ position: fixed;
+  top: 1%; /* Posição mais próxima do topo da tela */
+  right: 1%; /* Alinhado à direita */
+  
+  /* Mantendo estilos de tamanho e cor */
+  background-color: #ccc;
   color: #000;
   border: none;
   border-radius: 8px;
-  padding: 4px 8px; /* 🔹 ainda menor */
-  font-size: 0.7rem; /* 🔹 texto menor */
+  padding: 8px 12px; 
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
   transition: all 0.3s ease;
 }
 

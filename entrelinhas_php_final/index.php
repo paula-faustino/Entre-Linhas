@@ -121,22 +121,25 @@ html, body {
   min-width: 200px;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .dropdown-content li a {
   color: white;
   padding: 12px 15px;
   font-weight: 500;
+   z-index: 1000;
 }
 
 .dropdown-content li a:hover {
   background-color: #004c80;
+   z-index: 1000;
 }
 
 /* Mostrar submenu quando passar o mouse */
 .dropdown:hover .dropdown-content {
   display: block;
+   z-index: 10000;
 }
 
 
@@ -169,6 +172,7 @@ html, body {
   height: 25px;  /* altura menor */
   background-size: 100% 100%;
   filter: invert(100%); /* 🔹 deixa as setas brancas visíveis em imagens escuras */
+  
 }
 
 /* 🔹 Reduz o tamanho da legenda dentro do carrossel */
@@ -189,6 +193,13 @@ html, body {
 .carousel-caption a.btn {
   font-size: 14px;
   padding: 8px 16px;
+}
+.btn {
+  background-color: #87c6d6;
+  color: #003d7a;
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2);
+   
+  transition: all 0.3s ease;
 }
 
   </style>
@@ -214,7 +225,6 @@ html, body {
         <ul class="dropdown-content">
           <a href="#dislexia" data-page="dislexia.php">Dislexia</a>
           <li><a href="oque-e-dislexia.php">O que é Dislexia</a></li>
-          <li><a href="tipos-dislexia.php">Tipos de Dislexia</a></li>
           <li><a href= "#tipo-dislexia" data-page="tipos-dislexia.php">Tipos de dislexia</a></li> 
           <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
           <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
@@ -244,10 +254,12 @@ html, body {
     <div class="carousel-item active">
       <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>    
       </div>
     </div>
   </div>
+
+  
 
   <!-- Botões de navegação -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
