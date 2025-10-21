@@ -97,6 +97,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 1000;
 }
 
 .menu li {
@@ -197,8 +198,7 @@ html, body {
 .btn {
   background-color: #87c6d6;
   color: #003d7a;
-  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2);
-   
+  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2); 
   transition: all 0.3s ease;
 }
 
@@ -224,7 +224,7 @@ html, body {
         <a href="#dislexia" data-page="dislexia.php">Dislexia ▾</a>
         <ul class="dropdown-content">
           <a href="#dislexia" data-page="dislexia.php">Dislexia</a>
-          <li><a href="oque-e-dislexia.php">O que é Dislexia</a></li>
+          <li><a href="#oque-e-dislexia" data-page="oque-e-dislexia.php">O que é Dislexia</a></li>
           <li><a href= "#tipo-dislexia" data-page="tipos-dislexia.php">Tipos de dislexia</a></li> 
           <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
           <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
@@ -234,7 +234,6 @@ html, body {
       <li class="dropdown">
        <a href="#servicos">Serviços ▾</a>
        <ul class="dropdown-content">
-        <li><a href="#servicos" data-page="servicos.php">Serviços</a></li>
         <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
         <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
        </ul>

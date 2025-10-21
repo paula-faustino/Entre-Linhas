@@ -107,24 +107,7 @@ header {
   margin: 0;
 }
 
-/* ===== MENU ===== */
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 18px; /* 🔹 reduz o espaço entre os itens do menu */
-}
 
-.menu a {
-  font-size: 15px; /* 🔹 diminui o texto do menu */
-  padding: 6px 10px; /* 🔹 reduz o espaço interno dos links */
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-}
-
-.menu a:hover {
-  color: #87c6d6;
-}
 
 
 .identificar-card-container {
