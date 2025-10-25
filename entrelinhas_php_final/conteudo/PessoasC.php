@@ -1,11 +1,11 @@
- <section>
+<section style="background-color: #add8e6; padding: 20px; border-radius: 10px; text-align: center;">
     
  <h2>Histórias reais e inspiradoras:</h2>
     
  </section>
 
 <section>
-     <img src="imagems/images.webp" alt="grupo" class="logo-img">
+     <img src="imagems/images.webp" alt="img" class="sec-imag">
    <h4>John Lennon</h4>
    <p>Cantor, compositor e ativista britânico. Conhecido por fundar os Beatles, banda de rock 
       mundialmente famosa que surgiu nos anos 1960. John foi diagnosticado com dislexia apenas depois
@@ -15,7 +15,7 @@
 </section>
 
 <section>
-    <img src="imagems/Cher.jpg" alt="grupo" class="logo-img">
+    <img src="imagems/Cher.jpg" alt="img" class="sec-imag">
     <h4>Cher</h4>
     <p> Conhecida como deusa do pop, atriz, cantora e personalidade da televisão americana. Cher 
         foi diagnosticada com dislexia e discalculia apenas na vida adulta. Tinha grande dificuldade
@@ -24,7 +24,7 @@
 </section>
 
 <section>
-    <img src="imagems/dzhenifer-eniston-janifer-aniston-aktrisa.webp" alt="grupo" class="logo-img">
+    <img src="imagems/dzhenifer-eniston-janifer-aniston-aktrisa.webp" alt="img" class="sec-imag">
     <h4>Jennifer Aniston</h4>
     <p>Atriz de hollywood, Jennifer foi diagnosticada com dislexia aos 20 anos de idade, descobrindo 
         através de um exame oftalmológico que apontava que seus olhos pulavam palavras e sua quantidade

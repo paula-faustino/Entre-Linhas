@@ -1,6 +1,7 @@
-<section>
-    <h2>Apps Para Auxiliar pessoas com Dislexia:</h2>
+<section style="background-color: #add8e6; padding: 20px; border-radius: 10px; text-align: center;">
+  <h2>Apps Para Auxiliar pessoas com Dislexia:</h2>
 </section>
+
 
 <section>
     <h3>Leitura para Fala (Text-to-Speech):</h3>

@@ -9,7 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EntreLinhas</title>
 
-  <!-- ✅ Adicionado -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
@@ -192,6 +191,30 @@
       box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2); 
       transition: all 0.3s ease;
     }
+    .bonito {
+    display: inline-block;
+    background-color: #5dafc4ff; /* cor principal */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px; /* tamanho do botão */
+    border-radius: 25px; /* deixa redondinho */
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+  }
+  .sec-imag {
+  width: 60%;        /* diminui o tamanho — pode ajustar (ex: 50%, 40%) */
+  max-width: 900px;  /* impede que fique muito grande em telas grandes */
+  height: auto;      /* mantém a proporção */
+  display: block;    /* permite centralizar */
+  margin: 0 auto;    /* centraliza horizontalmente */
+  border-radius: 10px; /* opcional: cantos levemente arredondados */
+  }
+  .bonito:hover {
+    background-color: #003d7a; /* cor no hover */
+    transform: scale(1.05); /* leve aumento ao passar o mouse */
+  }
 
 </style>
 
@@ -238,71 +261,75 @@
 
   <main id="conteudo">
 
+<!-- conteudo da pagina -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-  <!-- conteudo da pagina -->
- <!-- Carrossel -->
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
-      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+    
+      <div class="carousel-item active">
+        <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+        </div>
       </div>
+
+      <div class="carousel-item">
+        <img src="imagems/aplicativo.png" class="d-block w-100" alt="Aplicativo">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <a href="#" data-page="Aplicativo.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="imagems/Filmes.png" class="d-block w-100" alt="Aplicativo">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+          <a href="#" data-page="filmes.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="imagems/aplicativo.png" class="d-block w-100" alt="Aplicativo">
-      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <a href="#" data-page="Aplicativo.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
-      </div>
-    </div>
+    <!-- Controles (setas de navegação) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
 
-    <div class="carousel-item">
-      <img src="imagems/Filmes.png" class="d-block w-100" alt="Aplicativo">
-      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <a href="#" data-page="filmes.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
-      </div>
-    </div>
-
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
   </div>
 
-  <!-- Controles (setas de navegação) -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
+  <section>
+          <div class="hero-content">
+            <h1>EntreLinhas</h1>
+            <p class="subtext">Organizando ideias para quem vê o mundo de forma única</p>
+            <p>Site voltado para auxiliar nas informações sobre a dislexia.</p>
+          </div>
+  </section>
+          
+  <section id="sobre-site">
+        <h2>Sobre o Site</h2>
+        <img src="imagems/EntreLinhas.png" alt="img" class="sec-imag">
+        <p>Este site foi criado com o intuito de informatizar e desmistificar os preconceitos sobre a dislexia, trazendo o máximo 
+          de informações possíveis sobre o tema. Até hoje, muitas pessoas com dislexia ainda sofrem com preconceitos existentes, 
+          e o nosso site busca facilitar o acesso a informações de forma clara e acessível. Caso possua alguma dúvida, por favor, 
+          entre em contato conosco.</p>
+        <a href="#" data-page="contato.php" class="bonito">CONTATO</a>  
+  </section>
 
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Próximo</span>
-  </button>
-</div>
+  <section id="sobre-site">
+        <h2>Leis e direitos</h2>
+        <img src="imagems/Direitos.png" alt="img" class="sec-imag">
+        <p>Há várias leis e direitos que protegem as pessoas com dislexia, ajudando a facilitar seu dia a dia e garantindo o 
+          respeito às suas opiniões. Para saber mais, clique no botão 'Saiba mais' abaixo.</p>
+        <a href="#" data-page="Leis.php" class="bonito">SAIBA MAIS</a>
+  </section>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<section>
-        <div class="hero-content">
-          <h1>EntreLinhas</h1>
-          <p class="subtext">Organizando ideias para quem vê o mundo de forma única</p>
-          <p>Site voltado para auxiliar nas informações sobre a dislexia.</p>
-        </div>
-</section>
-        
-<section id="sobre-site">
-      <h2>Sobre o Site</h2>
-      <p></p>
-</section>
-
-<section id="sobre-site">
-      <h2>Leis e direitos</h2>
-      <p></p>
-      <button></button>
-</section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
  <script src="script.js"></script>
+
 <!--botão modo escuro-->
 <script>
   const toggle = document.querySelector('.dark-toggle');
@@ -327,10 +354,6 @@
   });
 </script>
 
-   
-
- 
-  
   <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
 
   <script>
