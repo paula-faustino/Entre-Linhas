@@ -13,196 +13,187 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
-  <style>
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: #eee4ca;
-}
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #eee4ca;
+    }
 
-.carousel-item,
-.carousel-inner {
-  background-color: #eee4ca !important;
-}
+    .carousel-item,
+    .carousel-inner {
+      background-color: #eee4ca !important;
+    }
 
-    html {
-      scroll-behavior: smooth;
-    }
-    .modo-escuro {
-      background-color: #1a1a1a;
-      color: white;
-    }
-    .modo-escuro section,
-    .modo-escuro .hero-content {
-      background-color: #333 !important;
-      color: white !important;
-    }
-    .modo-escuro a,
-    .modo-escuro button {
-      color: white !important;
-    }
-.dark-toggle {
-  background: #ccc;
-  color: #000;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 2rem; 
-}
-
-    .hero h1 {
-      font-family: 'OpenDyslexic', Arial, sans-serif;
-      font-size: 48px;
-    }
-    .hero .subtext {
-      font-size: 20px;
-      margin-top: 10px;
-      color: #000000aa;
-    }
-    .final-chamada {
-      background: #d2f3ff;
-      padding: 40px;
-      margin: 50px auto;
-      border-radius: 20px;
-      max-width: 900px;
-      text-align: center;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    }
-    .final-chamada h3 {
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-    .btn-play {
-      background-color: #87c6d6;
-      color: black;
-      padding: 12px 25px;
+        html {
+          scroll-behavior: smooth;
+        }
+        .modo-escuro {
+          background-color: #1a1a1a;
+          color: white;
+        }
+        .modo-escuro section,
+        .modo-escuro .hero-content {
+          background-color: #333 !important;
+          color: white !important;
+        }
+        .modo-escuro a,
+        .modo-escuro button {
+          color: white !important;
+        }
+    .dark-toggle {
+      background: #ccc;
+      color: #000;
       border: none;
-      border-radius: 10px;
+      padding: 10px 15px;
+      border-radius: 8px;
       font-weight: bold;
-      text-decoration: none;
+      cursor: pointer;
+      margin-top: 2rem; 
     }
-    .hero-content{
+
+        .hero h1 {
+          font-family: 'OpenDyslexic', Arial, sans-serif;
+          font-size: 48px;
+        }
+        .hero .subtext {
+          font-size: 20px;
+          margin-top: 10px;
+          color: #000000aa;
+        }
+        .final-chamada {
+          background: #d2f3ff;
+          padding: 40px;
+          margin: 50px auto;
+          border-radius: 20px;
+          max-width: 900px;
+          text-align: center;
+          box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .final-chamada h3 {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+        .btn-play {
+          background-color: #87c6d6;
+          color: black;
+          padding: 12px 25px;
+          border: none;
+          border-radius: 10px;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        .hero-content{
+          
+        }
+
+    
+        /* ====== MENU PRINCIPAL ====== */
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .menu li {
+      position: relative;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #f8f0f0ff;
+      font-weight: 600;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    /* ====== DROPDOWN ====== */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #87c6d6;
+      min-width: 200px;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    .dropdown-content li a {
+      color: white;
+      padding: 12px 15px;
+      font-weight: 500;
+      z-index: 1000;
+    }
+
+    .dropdown-content li a:hover {
+      background-color: #004c80;
+      z-index: 1000;
+    }
+
+    /* Mostrar submenu quando passar o mouse */
+    .dropdown:hover .dropdown-content {
+      display: block;
+      z-index: 10000;
+    }
+
+
+    /* ===== AJUSTE DO TAMANHO DO CARROSSEL ===== */
+
+    .carousel-item img {
+      object-fit: cover;  /* evita sobras */
+      width: 100%;
+      height: auto;
+    }
+
+    #carouselExample {
+      max-width: 1000px;  /* 🔹 largura máxima menor */
+      margin: 30px auto; /* 🔹 centraliza o carrossel */
+      border-radius: 12px;
+      overflow: hidden;  /* 🔹 impede imagens de ultrapassar o contorno */
+    }
+
+    /* 🔹 Tamanho da imagem do carrossel */
+    #carouselExample img {
+      height: 460px;     /* 🔹 altura reduzida da imagem */
+      object-fit: cover; /* 🔹 mantém proporção sem distorcer */
+      border-radius: 10px;
+    }
+
+    /* 🔹 Tamanho e aparência das setas de navegação */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 25px;   /* largura menor */
+      height: 25px;  /* altura menor */
+      background-size: 100% 100%;
+      filter: invert(100%); /* 🔹 deixa as setas brancas visíveis em imagens escuras */
       
     }
 
- 
-    /* ====== MENU PRINCIPAL ====== */
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  z-index: 1000;
-}
+    /* 🔹 Reduz o tamanho da legenda dentro do carrossel */
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px 20px;
+      border-radius: 8px;
+    }
+    .carousel-caption a.btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    .btn {
+      background-color: #87c6d6;
+      color: #003d7a;
+      box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2); 
+      transition: all 0.3s ease;
+    }
 
-.menu li {
-  position: relative;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #f8f0f0ff;
-  font-weight: 600;
-  padding: 10px 15px;
-  display: block;
-}
-
-/* ====== DROPDOWN ====== */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #87c6d6;
-  min-width: 200px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  z-index: 1000;
-}
-
-.dropdown-content li a {
-  color: white;
-  padding: 12px 15px;
-  font-weight: 500;
-   z-index: 1000;
-}
-
-.dropdown-content li a:hover {
-  background-color: #004c80;
-   z-index: 1000;
-}
-
-/* Mostrar submenu quando passar o mouse */
-.dropdown:hover .dropdown-content {
-  display: block;
-   z-index: 10000;
-}
-
-
-/* ===== AJUSTE DO TAMANHO DO CARROSSEL ===== */
-
-.carousel-item img {
-  object-fit: cover;  /* evita sobras */
-  width: 100%;
-  height: auto;
-}
-
-#carouselExample {
-  max-width: 700px;  /* 🔹 largura máxima menor */
-  margin: 30px auto; /* 🔹 centraliza o carrossel */
-  border-radius: 12px;
-  overflow: hidden;  /* 🔹 impede imagens de ultrapassar o contorno */
-}
-
-/* 🔹 Tamanho da imagem do carrossel */
-#carouselExample img {
-  height: 315px;     /* 🔹 altura reduzida da imagem */
-  object-fit: cover; /* 🔹 mantém proporção sem distorcer */
-  border-radius: 12px;
-}
-
-/* 🔹 Tamanho e aparência das setas de navegação */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 25px;   /* largura menor */
-  height: 25px;  /* altura menor */
-  background-size: 100% 100%;
-  filter: invert(100%); /* 🔹 deixa as setas brancas visíveis em imagens escuras */
-  
-}
-
-/* 🔹 Reduz o tamanho da legenda dentro do carrossel */
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 15px 20px;
-  border-radius: 8px;
-}
-
-.carousel-caption h1 {
-  font-size: 22px; /* título menor */
-}
-
-.carousel-caption p {
-  font-size: 16px; /* texto menor */
-}
-
-.carousel-caption a.btn {
-  font-size: 14px;
-  padding: 8px 16px;
-}
-.btn {
-  background-color: #87c6d6;
-  color: #003d7a;
-  box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2); 
-  transition: all 0.3s ease;
-}
-
-  </style>
+</style>
 
 </head>
 <body>
@@ -219,15 +210,16 @@ html, body {
     <ul class="menu">
       <li><a href="index.php">Início</a></li>
      
-      <!-- MENU DROPDOWN DE DISLEXIA -->
+<!-- MENU DROPDOWN DE DISLEXIA -->
       <li class="dropdown">
-        <a href="#dislexia" data-page="dislexia.php">Dislexia ▾</a>
+        <a href="#dislexia">Dislexia ▾</a>
         <ul class="dropdown-content">
-          <a href="#dislexia" data-page="dislexia.php">Dislexia</a>
-          <li><a href="#oque-e-dislexia" data-page="oque-e-dislexia.php">O que é Dislexia</a></li>
+          <li><a href="#oque-e-dislexia" data-page="dislexia.php">O que é Dislexia</a></li>
           <li><a href= "#tipo-dislexia" data-page="tipos-dislexia.php">Tipos de dislexia</a></li> 
           <li><a href="#identificar" data-page="identificar.php">Como Identificar</a></li>
           <li><a href="#Pessoas" data-page="PessoasC.php">Pessoas com Dislexia</a></li>
+          <li><a href="#filmes" data-page="filmes.php">Filmes que abordam a dislexia</a></li> 
+          <li><a href="#leis" data-page="Leis.php">Leis e Direitos</a></li> 
         </ul>
       </li>
 
@@ -236,6 +228,7 @@ html, body {
        <ul class="dropdown-content">
         <li><a href="#sobre-nos" data-page="sobre.php">Sobre Nós</a></li>
         <li><a href="#profissionais" data-page="profissionais.php">Profissionais</a></li>
+        <li><a href="#Aplicativo" data-page="Aplicativo.php">Aplicativos que auxiliam</a></li>
        </ul>
       <li><a href="#contato" data-page="contato.php">Contato</a></li>
      </li>
@@ -245,31 +238,48 @@ html, body {
 
   <main id="conteudo">
 
-<!-- conteudo da pagina -->
- 
 
+  <!-- conteudo da pagina -->
+ <!-- Carrossel -->
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
+
+    <!-- Slide 1 -->
     <div class="carousel-item active">
       <img src="imagems/PessoasC.png" class="d-block w-100" alt="Entenda a Dislexia">
       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>    
+        <a href="#" data-page="PessoasC.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
       </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="imagems/aplicativo.png" class="d-block w-100" alt="Aplicativo">
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+        <a href="#" data-page="Aplicativo.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="imagems/Filmes.png" class="d-block w-100" alt="Aplicativo">
+      <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+        <a href="#" data-page="filmes.php" class="btn btn-success btn-lg">SAIBA MAIS</a>
+      </div>
+    </div>
+
   </div>
 
-  
-
-  <!-- Botões de navegação -->
+  <!-- Controles (setas de navegação) -->
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
   </button>
+
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
   </button>
 </div>
-
-
 
 <section>
         <div class="hero-content">
@@ -281,11 +291,18 @@ html, body {
         
 <section id="sobre-site">
       <h2>Sobre o Site</h2>
-      <p>Nosso aplicativo foi criado para auxiliar pessoas com dislexia em seus processos de aprendizagem. Ele apresenta diferentes níveis de interação adaptados ao tipo de dislexia, permitindo um suporte personalizado e eficaz.</p>
+      <p></p>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<section id="sobre-site">
+      <h2>Leis e direitos</h2>
+      <p></p>
+      <button></button>
+</section>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
 <!--botão modo escuro-->
 <script>
   const toggle = document.querySelector('.dark-toggle');
@@ -312,9 +329,9 @@ html, body {
 
    
 
-  <script src="script.js"></script>
+ 
   
-  <button class="dark-toggle" onclick="toggleDarkMode()">Modo Escuro</button>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
 
   <script>
     const toggle = document.querySelector('.dark-toggle');

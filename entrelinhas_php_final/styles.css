@@ -107,9 +107,6 @@ header {
   margin: 0;
 }
 
-
-
-
 .identificar-card-container {
   display: flex;
   justify-content: space-between; /* Espaço entre os cards */

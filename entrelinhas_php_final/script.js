@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
           window.speechSynthesis.speak(utterance);
           lendo = true;
           bloquearLeitura = false; // enquanto lê, cliques ainda funcionam
-          btnLerTudo.textContent = "Parar Leitura";
+          btnLerTudo.textContent = "Ler Tudo";
         }
       }
     });

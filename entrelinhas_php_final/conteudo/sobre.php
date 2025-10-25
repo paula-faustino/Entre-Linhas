@@ -1,10 +1,4 @@
 
-<section id="sobre-nos">
-  <h2>Entre Linhas<h2>
-<p>O Entre Linhas é essencial para criar laços com pessoas que buscam conhecimento, familiares, educadores ou até mesmo quem convive com a dislexia. Conteúdos claros e bem elaborados têm o poder de inspirar compreensão, empatia e oferecer apoio para quem precisa. Nosso objetivo é informar e conscientizar, tornando a dislexia um tema de prioridade e de fácil acesso para todos.</p>
-<p> Faça do Entre Linhas uma bela representação da inclusão, trazendo informações confiáveis, conteúdos educativos e exemplos reais que ajudam a entender melhor o que é a dislexia! Você quer receber materiais que desmistificam este transtorno de aprendizagem? Deseja aprender maneiras de apoiar amigos, filhos ou alunos com dislexia? Ou gostaria de conhecer histórias inspiradoras de pessoas que convivem com a condição? As possibilidades são infinitas, e todas têm como foco ampliar o conhecimento e transformar a forma como enxergamos a dislexia!</p>
-</section>
-
 <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; padding-top: 50px;">
     <div class="identificar-card">
       <h3>Mayara de O. Santana</h3>
@@ -28,6 +22,11 @@
     </div>
 </div>
 
+<section id="sobre-nos">
+  <h2>Entre Linhas<h2>
+<p>O Entre Linhas é essencial para criar laços com pessoas que buscam conhecimento, familiares, educadores ou até mesmo quem convive com a dislexia. Conteúdos claros e bem elaborados têm o poder de inspirar compreensão, empatia e oferecer apoio para quem precisa. Nosso objetivo é informar e conscientizar, tornando a dislexia um tema de prioridade e de fácil acesso para todos.</p>
+<p> Faça do Entre Linhas uma bela representação da inclusão, trazendo informações confiáveis, conteúdos educativos e exemplos reais que ajudam a entender melhor o que é a dislexia! Você quer receber materiais que desmistificam este transtorno de aprendizagem? Deseja aprender maneiras de apoiar amigos, filhos ou alunos com dislexia? Ou gostaria de conhecer histórias inspiradoras de pessoas que convivem com a condição? As possibilidades são infinitas, e todas têm como foco ampliar o conhecimento e transformar a forma como enxergamos a dislexia!</p>
+</section>
 
 <section>
   <h2>Nosso objetivo</h2>
