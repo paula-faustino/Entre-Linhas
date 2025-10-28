@@ -47,6 +47,17 @@
 </ul>
 </p></div></section>
 
+<main id="conteudo">
+  <section>
+    <div class="hero-content">
+      <h2>Vídeo informativo sobre dislexia</h2>
+      <video src="videos/videeo.mp4" controls width="640" height="360">
+      </video>
+    </div>
+  </section>
+</main>
+
+
  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
 
   <script>

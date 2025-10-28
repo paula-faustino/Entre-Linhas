@@ -268,6 +268,22 @@ nav ul li a:hover {
     
    font-family: 'OpenDyslexic', Arial, sans-serif;
 }
+.hero-content video {
+  width: 80%; /* ocupa 80% da largura da área visível */
+  max-width: 800px; /* mas não passa de 800px */
+  height: auto; /* mantém a proporção */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 90%;           /* ocupa 90% da largura da tela */
+    max-width: 1100px;    /* mas não ultrapassa 1100px em telas grandes */
+    margin: 60px auto;    /* centraliza horizontalmente e dá espaço vertical */
+    padding: 30px 5%;     /* espaço interno proporcional à tela */
+    text-align: justify;
+    background: #eee4ca;
+    border-radius: 24px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    font-family: 'OpenDyslexic', Arial, sans-serif;
+}
 
 .btn-install, .btn-play {
     display: inline-block;

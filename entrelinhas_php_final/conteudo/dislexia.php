@@ -6,7 +6,7 @@
 <p>Há diferentes graus de dislexia, descritos como leve, moderado e severo. O grau de dislexia baseia-se, em geral, na severidade das dificuldades apresentadas pelo indivíduo.</p>
 <p>O tratamento adequado, as pessoas com dislexia podem desenvolver habilidades de leitura e escrita, usando métodos personalizados que se ajustam às suas necessidades específicas.</p>
 <p>clique aqui para saber mais sobre tipos de dislexia</p>
- <a href="#" data-page="tipos-dislexia.php" class="bonito">SAIBA MAIS</a>
+ <a href="#" data-page="conteudo/tipos-dislexia.php" class="bonito">SAIBA MAIS</a>
 </div>
 </div>
 </section>
@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="../style.css"> <!-- se estiver dentro de /conteudo -->
 <script src="../script.js" defer></script>
 </head>
-  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
 
+<button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Escuro</button>
   <script>
     const toggle = document.querySelector('.dark-toggle');
     toggle.addEventListener('click', () => {
       document.body.classList.toggle('modo-escuro');
     });
-    
+    </script>
