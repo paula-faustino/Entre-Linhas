@@ -27,6 +27,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+<head>
+  <meta charset="UTF-8">
+  <title>Entre em Contato</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
 
 <section>
   <div>

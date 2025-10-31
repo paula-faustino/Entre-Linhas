@@ -13,13 +13,7 @@
 
   <link rel="stylesheet" href="styles.css" />
 <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      background-color: #eee4ca;
-    }
-
+ 
     .carousel-item,
     .carousel-inner {
       background-color: #eee4ca !important;
